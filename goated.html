@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Felix PB Magic</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{font-family:Montserrat,sans-serif;color:#111;line-height:1.5;background:#fff;}
+  a{text-decoration:none;color:inherit;}
+
+  /* Header */
+  header{position:sticky;top:0;background:#fff;box-shadow:0 1px 5px rgba(0,0,0,0.1);z-index:100;}
+  .container{max-width:1100px;margin:0 auto;padding:20px;}
+  nav{display:flex;justify-content:space-between;align-items:center;}
+  .logo{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;color:#0b3b71;}
+  .menu{display:flex;gap:20px;align-items:center;}
+  .menu a{font-weight:600;color:#666;}
+  .menu a.cta{background:#0b3b71;color:#fff;padding:10px 18px;border-radius:8px;}
+
+  /* Hero */
+  .hero{display:flex;flex-wrap:wrap;align-items:center;padding:60px 0;gap:40px;}
+  .hero .text{flex:1;min-width:280px;}
+  .hero h1{font-family:'Playfair Display',serif;font-size:42px;margin-bottom:20px;color:#0b3b71;}
+  .hero p{margin-bottom:20px;color:#666;}
+  .hero .book-btn{display:inline-block;background:#ff6b6b;color:#fff;padding:12px 24px;border-radius:10px;font-weight:700;}
+  .hero img{width:100%;max-width:420px;border-radius:12px;}
+
+  /* Services */
+  .services{padding:60px 0;}
+  .services h2{font-family:'Playfair Display',serif;font-size:32px;margin-bottom:20px;color:#0b3b71;text-align:center;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;}
+  .card{border:1px solid #eee;border-radius:12px;padding:20px;background:#fff;text-align:center;}
+  .card img{width:100%;border-radius:8px;margin-bottom:12px;}
+  .card h3{margin-bottom:8px;color:#0b3b71;}
+  .card p{margin-bottom:10px;color:#666;font-size:14px;}
+  .price{font-weight:800;font-size:20px;color:#0b3b71;margin-bottom:10px;}
+  .card a{display:inline-block;margin-top:10px;padding:8px 16px;background:#ff6b6b;color:#fff;border-radius:8px;font-weight:700;}
+
+  /* Events */
+  .events{padding:60px 0;text-align:center;}
+  .events img{max-width:500px;border-radius:12px;margin-top:20px;width:100%;height:auto;}
+
+  /* Testimonials */
+  .testimonials{padding:60px 0;text-align:center;}
+  .testimonials h2{font-family:'Playfair Display',serif;font-size:32px;color:#0b3b71;margin-bottom:20px;}
+  blockquote{border-left:3px solid #eee;padding-left:15px;color:#666;font-style:italic;margin-bottom:20px;display:inline-block;text-align:left;max-width:700px;}
+  .testimonials img{width:100%;max-width:700px;height:auto;border-radius:12px;margin:25px auto 0;display:block;}
+
+  /* Awards */
+  .awards{padding:60px 0;text-align:center;}
+  .awards h2{font-family:'Playfair Display',serif;font-size:32px;color:#0b3b71;margin-bottom:20px;}
+  .awards img{width:100%;max-width:700px;height:auto;border-radius:12px;margin:0 auto;display:block;}
+
+  /* Booking */
+  .booking{padding:60px 0;text-align:center;}
+  .booking h2{font-family:'Playfair Display',serif;font-size:32px;color:#0b3b71;margin-bottom:20px;}
+  .booking form{display:flex;flex-direction:column;gap:12px;max-width:500px;margin:0 auto;}
+  .booking input,.booking textarea{padding:10px;border:1px solid #ccc;border-radius:8px;width:100%;}
+  .booking button{padding:12px 20px;background:#0b3b71;color:#fff;border:none;border-radius:8px;font-weight:700;cursor:pointer;}
+
+  /* Footer */
+  footer{background:#f9f9f9;padding:40px 0;text-align:center;}
+  .socials img{width:32px;height:32px;margin:0 auto;display:block;}
+
+  @media(max-width:900px){
+    .hero{flex-direction:column;text-align:center;}
+    .hero img{margin:0 auto;}
+    .cards{grid-template-columns:1fr;}
+  }
+</style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">Felix PB Magic</div>
+        <div class="menu">
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#events">Events</a>
+          <a class="cta" href="mailto:magic1sorcery3@gmail.com">Enquire Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="text">
+        <h1>Creating Fun, Entertaining Enchantment for Your Events</h1>
+        <p>Hi! I'm Felix and I provide enchanting entertainment for all occasions. Whether it’s a corporate event, wedding, or birthday party, I ensure every moment is filled with wonder and excitement that leaves lasting memories. Unlike most magicians, I'm 12 years old and have already won 4 awards for my magic, in case you were wondering about the quality of it! I am a member of the Magic Circle's Young Magician's Club, like the Magic Circle, but for kids! </p>
+        <a class="book-btn" href="mailto:magic1sorcery3@gmail.com">Enquire Now</a>
+      </div>
+      <img src="https://static.wixstatic.com/media/ebe6e3_2603ad4272da46938375e7597b5a978b~mv2.png" alt="Felix performing magic">
+    </section>
+
+    <!-- Services -->
+    <section class="services" id="services">
+      <h2>Services</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://static.wixstatic.com/media/ebe6e3_712863bc671145aea5f4712fbcbb7882~mv2.jpg" alt="Birthday Magic">
+          <h3>Kids/adults Birthday Magic Show</h3>
+          <p>A 45 minute fun filled magic show for kids and adults alike! Tailored for a birthday party, this show is a great way to entertain guests at your or your child's special day.</p>
+          <div class="price">£45</div>
+          <a href="mailto:magic1sorcery3@gmail.com">Enquire Now</a>
+        </div>
+        <div class="card">
+          <img src="https://static.wixstatic.com/media/ebe6e3_351b4179c44e45c8aa2b195dd160beca~mv2.jpg" alt="Wedding Magic">
+          <h3>Wedding Table Magic</h3>
+          <p>My speciality; up-close magic for guests in between courses at your wedding. Check out my Instagram for a tiny preview of the magic you will recieve with these award-winning mini-acts!</p>
+          <div class="price">£75</div>
+          <a href="mailto:magic1sorcery3@gmail.com">Enquire Now</a>
+        </div>
+        <div class="card">
+          <img src="https://static.wixstatic.com/media/ebe6e3_73ed10ccfd644eeabdb7be959c0ca95f~mv2.jpg" alt="Corporate Magic">
+          <h3>Corporate Magic Show</h3>
+          <p>A polished show tailored for corporate audiences wanting to make their away day a great day. Featuring Rubik's cubes, predictions and more, this is something your employees will remember.</p>
+          <div class="price">£50</div>
+          <a href="mailto:magic1sorcery3@gmail.com">Enquire Now</a>
+        </div>
+        <div class="card">
+          <img src="https://static.wixstatic.com/media/ebe6e3_e26c01a20953401a854ff9252402cdde~mv2.jpg" alt="General Magic">
+          <h3>General Magic Show</h3>
+          <p>A blend of all my magic, you can't go wrong with a great show. this contains a massive array of effects, ranging from ropes to juggling!</p>
+          <div class="price">£45</div>
+          <a href="mailto:magic1sorcery3@gmail.com">Enquire Now</a>
+        </div>
+
+      </div>
+    </section>
+    <p>Extras are negotiable such as a prize for the birthday child, everyone gets a magic prop and learns how to do it. Also, these services are just suggestions-I can perform at any event you like. I will always be accompanied by one of my parents at an event.</p>
+
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <h2>What Clients Say</h2>
+      <blockquote>"Felix was our fantastic roving magician at our wedding! He is highly skilled and our guests absolutely loved him!" — Holly Hare</blockquote>
+      <img src="https://static.wixstatic.com/media/ebe6e3_351b4179c44e45c8aa2b195dd160beca~mv2.jpg" alt="Award 2">
+    </section>
+
+    <!-- Awards -->
+    <section class="awards">
+      <h2>Awards</h2>
+      <img src="https://static.wixstatic.com/media/ebe6e3_d3406fa748ea4aeca35066c83ea84bef~mv2.jpg" alt="Award 1">
+      <h2>These are they awards I've won over the last 18 months!</h2>
+    </section>
+
+    <!-- Booking -->
+    <section class="booking">
+      <h2>Book Your Event</h2>
+      <form action="mailto:magic1sorcery3@gmail.com" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message / Event Details" rows="5" required></textarea>
+        <button type="submit">Send Booking Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact: 07814785912 | magic1sorcery3@gmail.com | 45 Hill Road, Eastbourne, UK</p>
+    <div class="socials">
+      <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+      <p>felixpbmagic_</p>
+    </div>
+    <p>© 2035 Felix PB Magic</p>
+  </footer>
+</body>
+</html>
